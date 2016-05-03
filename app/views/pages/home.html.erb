@@ -1,5 +1,17 @@
 <div class="jumbotron center">
+
+	<% if user_signed_in? %>
+		<h2>Welcome back, (Realtor Name), what would you like to do today?</h2>
+		<br>
+		<%= link_to "View Profile", "#", class: "btn btn-default btn-lg" %>
+		<%= link_to "Manage Listings", "#", class: "btn btn-default btn-lg" %>
+		<%= link_to "Add New Listing", "#", class: "btn btn-default btn-lg" %>
+	<% else %>
 	<h1>Welcome to the Estatery!</h1>
-	<%= link_to "Log In", "#", class: "btn btn-default btn-lg" %>
-	<%= link_to "Sign Up", "#", class: "btn btn-primary btn-lg" %>
+	<p>
+		<%= link_to "Log In", "#", class: "btn btn-default btn-lg" %>
+		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+	</p>
+
+	<% end %>
 </div>
