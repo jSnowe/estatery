@@ -4,7 +4,7 @@ class ListingsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @listings = Listing.all
+    @listings = Listing.all.order("created_at DESC").limit(3)
   end
 
   def show
