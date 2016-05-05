@@ -13,6 +13,7 @@ gem 'bootstrap-sass'
 gem 'devise', '~> 3.4.0'
 gem 'paperclip'
 gem 'aws-sdk', '< 2.0'
+gem 'masonry-rails', '~> 0.2.0'
 
 
 group :development, :test do
