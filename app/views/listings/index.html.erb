@@ -8,7 +8,8 @@
           <%= listing.address %><br/>
           <strong><%= listing.price %></strong><br/>
           <%= listing.description %><br/>
-          <%= listing.user.email %>
+          <%= listing.user.name %><br/>
+          <%= listing.user.company %>
           <% if listing.user == current_user %>
           <div class="actions">
             <%= link_to edit_listing_path(listing) do %>

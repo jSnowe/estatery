@@ -24,7 +24,8 @@
 				</p>
 				<p>
 					<strong>Realtor:</strong>
-					<%= @listing.user.email %>
+					<%= @listing.user.name %>, 
+					<%= @listing.user.company %>
 				</p>
 
 				<% if @listing.user == current_user %>
