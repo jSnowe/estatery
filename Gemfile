@@ -17,6 +17,8 @@ gem 'masonry-rails', '~> 0.2.0'
 gem 'will_paginate', '~> 3.0.5'
 gem 'will_paginate-bootstrap'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+# Figaro gem for securley managing credentials
+gem 'figaro'
 
 group :development, :test do
 
